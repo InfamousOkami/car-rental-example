@@ -1,0 +1,57 @@
+.download-section {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+.download-section .download-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 250px;
+}
+.download-section .download-container .download-content {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.download-section .download-container .download-content h1 {
+  font-size: 3rem;
+}
+.download-section .download-container .download-content p {
+  color: grey;
+  font-size: 1rem;
+}
+.download-section .download-container .download-content .download-imgs {
+  display: flex;
+  gap: 25px;
+}
+.download-section .download-container .download-content .download-imgs img {
+  cursor: pointer;
+}
+.download-section .download-container .download-img {
+  display: flex;
+  justify-content: center;
+  flex: 50%;
+}
+@media (max-width: 1100px) {
+  .download-section .download-container .download-img {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .download-section .download-container {
+    display: block;
+    margin: 0;
+  }
+  .download-section .download-container .download-content {
+    padding: 25px;
+  }
+  .download-section .download-container .download-content h1 {
+    font-size: 1.75rem;
+  }
+  .download-section .download-container .download-content p {
+    font-size: 0.8rem;
+  }
+  .download-section .download-container .download-content .download-imgs {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=download.css.map */

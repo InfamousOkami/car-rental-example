@@ -1,0 +1,116 @@
+.hero-container {
+  width: 100%;
+  height: 800px;
+  z-index: 1;
+}
+.hero-container .hero-bg {
+  position: absolute;
+  top: -400px;
+  right: -600px;
+  width: 1500px;
+  height: 1450px;
+  z-index: 1;
+  filter: opacity(0.3);
+  transform: rotate(20deg);
+}
+.hero-container .hero-content {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  z-index: 2;
+}
+.hero-container .hero-content-text {
+  position: relative;
+  width: 40%;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: auto;
+}
+.hero-container .hero-content-text .sub-title {
+  font-size: 30px;
+}
+.hero-container .hero-content-text .title {
+  font-size: 60px;
+}
+.hero-container .hero-content-text .title span {
+  color: #0090e9;
+}
+.hero-container .hero-content-text .description {
+  color: grey;
+  font-size: 17px;
+}
+.hero-container .hero-content-text .hero-btns {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.hero-container .hero-content-text .hero-btns .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  padding: 20px 25px;
+  color: white;
+  height: 20px;
+  cursor: pointer;
+}
+.hero-container .hero-content-text .hero-btns .book-btn {
+  background-color: #0090e9;
+  border: 1px solid #0090e9;
+  font-size: 20px;
+}
+.hero-container .hero-content-text .hero-btns .learn-btn {
+  border: 1px solid black;
+  background-color: black;
+  transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+.hero-container .hero-content-text .hero-btns .learn-btn:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+}
+.hero-container .hero-content-img {
+  width: 700px;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1100px) {
+  .hero-container {
+    height: 500px;
+  }
+  .hero-container .hero-bg {
+    display: none;
+  }
+  .hero-container .hero-content-img {
+    display: none;
+  }
+  .hero-container .hero-content-text {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .hero-container {
+    height: 350px;
+    width: 100%;
+  }
+  .hero-container .hero-content {
+    width: 90%;
+  }
+  .hero-container .hero-content-text .sub-title {
+    font-size: 20px;
+  }
+  .hero-container .hero-content-text .title {
+    font-size: 35px;
+  }
+}/*# sourceMappingURL=hero.css.map */

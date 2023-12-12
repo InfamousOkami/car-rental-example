@@ -1,0 +1,30 @@
+@import "../../Styles/variables.scss";
+
+.banner-container {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+
+    span {
+      color: $primaryColor;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 25px 0;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}

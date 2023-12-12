@@ -1,0 +1,142 @@
+@import "../../Styles/variables.scss";
+
+.hero-container {
+  width: 100%;
+  height: 800px;
+  z-index: 1;
+
+  .hero-bg {
+    position: absolute;
+    top: -400px;
+    right: -600px;
+    width: 1500px;
+    height: 1450px;
+    z-index: 1;
+    filter: opacity(0.3);
+    transform: rotate(20deg);
+  }
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    z-index: 2;
+
+    &-text {
+      position: relative;
+      width: 40%;
+      z-index: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem;
+      margin: auto;
+
+      .sub-title {
+        font-size: 30px;
+      }
+
+      .title {
+        font-size: 60px;
+
+        span {
+          color: $primaryColor;
+        }
+      }
+
+      .description {
+        color: grey;
+        font-size: 17px;
+      }
+
+      .hero-btns {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        // height: 22px;
+
+        .btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          border-radius: 5px;
+          padding: 20px 25px;
+          color: white;
+          height: 20px;
+          cursor: pointer;
+        }
+
+        .book-btn {
+          background-color: $primaryColor;
+          border: 1px solid $primaryColor;
+
+          font-size: 20px;
+        }
+
+        .learn-btn {
+          border: 1px solid black;
+          background-color: black;
+
+          transition: background-color 0.5s, color 0.5s, border 0.5s;
+
+          &:hover {
+            background-color: white;
+            color: black;
+
+            transition: background-color 0.5s, color 0.5s;
+          }
+        }
+      }
+    }
+
+    &-img {
+      width: 700px;
+      height: fit-content;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    height: 500px;
+
+    .hero-bg {
+      display: none;
+    }
+
+    .hero-content-img {
+      display: none;
+    }
+
+    .hero-content {
+      &-text {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    height: 350px;
+    width: 100%;
+
+    .hero-content {
+      width: 90%;
+
+      &-text {
+        .sub-title {
+          font-size: 20px;
+        }
+
+        .title {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}

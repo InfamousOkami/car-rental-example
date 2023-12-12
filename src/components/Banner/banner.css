@@ -1,0 +1,26 @@
+.banner-container {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.banner-container h1 {
+  font-size: 3.5rem;
+}
+.banner-container p {
+  font-size: 1.5rem;
+}
+.banner-container p span {
+  color: #0090e9;
+}
+@media (max-width: 600px) {
+  .banner-container {
+    padding: 25px 0;
+  }
+  .banner-container h1 {
+    font-size: 2.5rem;
+  }
+}/*# sourceMappingURL=banner.css.map */

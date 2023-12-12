@@ -1,0 +1,71 @@
+@import "../../Styles/variables.scss";
+
+.box-cars {
+  display: flex;
+  width: 100%;
+
+  .pick-car {
+    width: 100%;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .pick-description {
+    width: 50%;
+
+    &__price {
+      background-color: $primaryColor;
+      color: white;
+      font-size: 1.8rem;
+      padding: 5px 20px;
+    }
+
+    &__table {
+      border-left: 2px solid grey;
+      border-bottom: 2px solid grey;
+      border-right: 2px solid grey;
+    }
+
+    &__table__col {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      border-bottom: 2px solid grey;
+      padding: 10px;
+
+      span {
+        width: 100%;
+
+        &:nth-child(2n) {
+          border-left: 2px solid grey;
+        }
+      }
+    }
+
+    .cta-btn {
+      margin-top: 1rem;
+      display: block;
+      background-color: $primaryColor;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      box-shadow: 5px 5px 5px rgb(179, 179, 179);
+    }
+  }
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+
+    .pick-car {
+      img {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}

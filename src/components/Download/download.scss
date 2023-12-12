@@ -1,0 +1,68 @@
+@import "../../Styles/variables.scss";
+.download-section {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+
+  .download-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 250px;
+
+    .download-content {
+      flex: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        color: grey;
+        font-size: 1rem;
+      }
+
+      .download-imgs {
+        display: flex;
+        gap: 25px;
+
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .download-img {
+      display: flex;
+      justify-content: center;
+      flex: 50%;
+
+      @media (max-width: 1100px) {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .download-container {
+      display: block;
+      margin: 0;
+
+      .download-content {
+        padding: 25px;
+        h1 {
+          font-size: 1.75rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+        }
+
+        .download-imgs {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.pc-container {
+  height: 42rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+.pc-container .pick-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.pc-container .pick-container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.pc-container .pick-container-title h3 {
+  font-size: 2rem;
+}
+.pc-container .pick-container-title h1 {
+  font-size: 3rem;
+}
+.pc-container .pick-container-title p {
+  font-size: 1.2rem;
+  color: grey;
+  width: 70%;
+  text-align: center;
+}
+.pc-container .pick-container-car-content {
+  display: flex;
+  gap: 5rem;
+  width: 80rem;
+}
+.pc-container .pick-container-car-content .pick-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pc-container .pick-container-car-content .pick-box button {
+  width: 19rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.pc-container .pick-container-car-content .pick-box button:hover {
+  background-color: #0090e9;
+  transition: background-color 0.5s;
+}
+.pc-container .pick-container-car-content .pick-box .colored-button {
+  background-color: #0090e9;
+}
+.pc-container .pick-container-car-content .box-cars {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  .pc-container .pick-container-car-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 60rem;
+  }
+  .pc-container .pick-container-car-content .box-cars .pick-car {
+    width: 75%;
+  }
+}
+@media (max-width: 1300px) {
+  .pc-container {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (max-width: 600px) {
+  .pc-container .pick-container-car-content {
+    width: 100%;
+  }
+}/*# sourceMappingURL=pickCar.css.map */

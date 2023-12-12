@@ -1,0 +1,59 @@
+@import "../../Styles/variables.scss";
+
+.heroPages {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../../Images/bluecar-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .heroPages-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.92);
+  }
+
+  .heroPages-text {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    justify-content: center;
+    color: #010103;
+  }
+
+  .heroPages-text h3 {
+    font-size: 3.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .heroPages-text p {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .heroPages-text p a {
+    color: #010103;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .heroPages-text p a:hover {
+    color: $primaryColor;
+  }
+
+  .about-main {
+    margin: 10rem auto;
+    display: flex;
+    gap: 5rem;
+    max-width: 90rem;
+    align-items: center;
+  }
+}

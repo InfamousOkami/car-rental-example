@@ -1,0 +1,73 @@
+.testimonials-section {
+  background-color: #f8f8f8;
+}
+.testimonials-section .testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+.testimonials-section .testimonials-container .testimonials-text {
+  width: 45rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.testimonials-section .testimonials-container .testimonials-text h3 {
+  font-size: 1.2rem;
+}
+.testimonials-section .testimonials-container .testimonials-text h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+}
+.testimonials-section .testimonials-container .testimonials-text p {
+  color: grey;
+  font-size: 1rem;
+}
+.testimonials-section .testimonials-container .testimonials-content {
+  display: flex;
+  gap: 50px;
+  width: 70rem;
+}
+@media (max-width: 1150px) {
+  .testimonials-section .testimonials-container .testimonials-content {
+    flex-direction: column;
+    width: auto;
+  }
+}
+.testimonials-section .testimonials-container .testimonials-content-Item {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.08);
+  padding: 50px;
+}
+.testimonials-section .testimonials-container .testimonials-content-Item p {
+  font-size: 1.3rem;
+}
+.testimonials-section .testimonials-container .testimonials-content-Item .user {
+  display: flex;
+  justify-content: space-between;
+  color: #0090e9;
+}
+.testimonials-section .testimonials-container .testimonials-content-Item .user-content {
+  display: flex;
+  color: black;
+}
+.testimonials-section .testimonials-container .testimonials-content-Item .user-content img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+@media (max-width: 600px) {
+  .testimonials-section .testimonials-container .testimonials-text {
+    width: 100%;
+  }
+  .testimonials-section .testimonials-container .testimonials-text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}/*# sourceMappingURL=testimonials.css.map */

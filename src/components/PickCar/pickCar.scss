@@ -1,0 +1,96 @@
+@import "../../Styles/variables.scss";
+
+.pc-container {
+  height: 42rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+
+  .pick-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: grey;
+        width: 70%;
+        text-align: center;
+      }
+    }
+
+    &-car-content {
+      display: flex;
+      gap: 5rem;
+      width: 80rem;
+
+      .pick-box {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        button {
+          width: 19rem;
+          height: 3rem;
+          border: none;
+          cursor: pointer;
+
+          transition: background-color 0.5s;
+
+          &:hover {
+            background-color: $primaryColor;
+            transition: background-color 0.5s;
+          }
+        }
+        .colored-button {
+          background-color: $primaryColor;
+        }
+      }
+
+      .box-cars {
+        display: flex;
+        align-items: center;
+      }
+
+      @media (max-width: 1300px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 60rem;
+
+        .box-cars {
+          .pick-car {
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1300px) {
+    height: fit-content;
+  }
+
+  @media (max-width: 600px) {
+    .pick-container {
+      &-car-content {
+        width: 100%;
+      }
+    }
+  }
+}

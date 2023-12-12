@@ -1,0 +1,134 @@
+@import "../../Styles/variables.scss";
+
+.footer-container {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  padding: 100px 0;
+
+  @media (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
+
+  .f-item {
+    width: 275px;
+  }
+
+  .car-rental {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .cr-title {
+      font-size: 1.75rem;
+
+      span {
+        font-size: 1.75rem;
+        font-weight: 600;
+      }
+    }
+
+    .cr-description {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: grey;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+
+        img {
+          width: 25px;
+        }
+      }
+    }
+  }
+
+  .company {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(46, 46, 46);
+      width: fit-content;
+
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $primaryColor;
+
+        transition: color 0.2s ease;
+      }
+    }
+  }
+
+  .working-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+
+      .email-input {
+        outline: none;
+        height: 40px;
+        background-color: rgb(221, 219, 219);
+        border: none;
+        padding: 0 20px;
+      }
+
+      .email-btn {
+        outline: none;
+        height: 40px;
+        background-color: $primaryColor;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
+        box-shadow: 5px 5px 5px rgb(196, 195, 195);
+        border-radius: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.plantrip-container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.plantrip-container .title {
+  font-size: 2.7rem;
+  text-align: center;
+}
+.plantrip-container .steps {
+  display: flex;
+  gap: 5rem;
+}
+@media (max-width: 1100px) {
+  .plantrip-container .steps {
+    flex-direction: column;
+  }
+}
+.plantrip-container .steps .step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  width: 250px;
+  position: relative;
+}
+.plantrip-container .steps .step .img-bg {
+  position: absolute;
+  background-image: url("../../Images//steps-logo-bg.png");
+  background-position: -125px;
+  width: 100%;
+  height: 250px;
+  opacity: 0.3;
+  scale: 0.8;
+  transform: rotate(90deg);
+}
+.plantrip-container .steps .step .img-1 {
+  width: 100%;
+  scale: 0.6;
+}
+.plantrip-container .steps .step .img-2,
+.plantrip-container .steps .step .img-3 {
+  width: 100%;
+  scale: 0.4;
+}
+.plantrip-container .steps .step h1 {
+  font-size: 27px;
+}
+.plantrip-container .steps .step p {
+  font-size: 18px;
+  color: grey;
+}/*# sourceMappingURL=planTrip.css.map */
